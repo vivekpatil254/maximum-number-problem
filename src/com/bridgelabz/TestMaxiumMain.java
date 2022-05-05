@@ -3,8 +3,10 @@ package com.bridgelabz;
 public class TestMaxiumMain {
 
     public static void main(String[] args) {
-	TestMaxiumMain object =new TestMaxiumMain();
-    object.compereTo(500,400,350);
+        TestMaxiumMain object =new TestMaxiumMain();
+        object.compereTo(500,400,350);
+        object.compereTo(500,800,350);
+
     }
     public void compereTo(Integer object1, Integer object2, Integer object3)
     {
