@@ -6,7 +6,7 @@ public class TestMaxiumMain {
         TestMaxiumMain object =new TestMaxiumMain();
         object.compereTo(500,400,350);
         object.compereTo(500,800,350);
-
+        object.compereTo(500,400,900);
     }
     public void compereTo(Integer object1, Integer object2, Integer object3)
     {
