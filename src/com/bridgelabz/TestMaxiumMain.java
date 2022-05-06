@@ -7,6 +7,11 @@ public class TestMaxiumMain {
         object.compereTo(500,400,350);
         object.compereTo(500,800,350);
         object.compereTo(500,400,900);
+
+        object.compereTo((float)500.89,(float)400.50,(float)350.52);
+        object.compereTo((float)500.50,(float)800.25,(float)350.25);
+        object.compereTo((float)500.25,(float)400.26,(float)900.89);
+
     }
     public void compereTo(Integer object1, Integer object2, Integer object3)
     {
@@ -27,4 +32,6 @@ public class TestMaxiumMain {
         else
             System.out.println("The "+object3+" is maximum number among three numbers.");
     }
+
+
 }
