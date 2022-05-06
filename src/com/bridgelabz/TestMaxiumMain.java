@@ -12,6 +12,11 @@ public class TestMaxiumMain {
         object.compereTo((float)500.50,(float)800.25,(float)350.25);
         object.compereTo((float)500.25,(float)400.26,(float)900.89);
 
+        /*object.compereTo("Apple","Peach","Banana");
+        object.compereTo("Peach","Apple","Banana");
+        object.compereTo("Peach","Banana","Apple");*/
+
+
     }
     public void compereTo(Integer object1, Integer object2, Integer object3)
     {
@@ -33,5 +38,13 @@ public class TestMaxiumMain {
             System.out.println("The "+object3+" is maximum number among three numbers.");
     }
 
-
+/*    public void compereTo(String object1, String object2, String object3)
+    {
+        if(object1 > object2 && object1 > object3)
+            System.out.println("The "+object1+" is maximum number among three numbers.");
+        else if(object2 > object1 && object2 > object3)
+            System.out.println("The "+object2+" is maximum number among three numbers.");
+        else
+            System.out.println("The "+object3+" is maximum number among three numbers.");
+    }*/
 }
