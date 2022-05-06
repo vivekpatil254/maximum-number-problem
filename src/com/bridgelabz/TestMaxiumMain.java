@@ -17,4 +17,14 @@ public class TestMaxiumMain {
         else
             System.out.println("The "+object3+" is maximum number among three numbers.");
     }
+
+    public void compereTo(Float object1, Float object2, Float object3)
+    {
+        if(object1>object2 && object1 > object3)
+            System.out.println("The "+object1+" is maximum number among three numbers.");
+        else if(object2>object1 && object2 > object3)
+            System.out.println("The "+object2+" is maximum number among three numbers.");
+        else
+            System.out.println("The "+object3+" is maximum number among three numbers.");
+    }
 }
