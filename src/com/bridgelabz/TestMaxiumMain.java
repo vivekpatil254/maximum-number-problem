@@ -1,50 +1,32 @@
 package com.bridgelabz;
-
-public class TestMaxiumMain {
+import java.lang.String;
+public class TestMaxiumMain{ //extends Comparable {
 
     public static void main(String[] args) {
-        TestMaxiumMain object =new TestMaxiumMain();
-        object.compereTo(500,400,350);
-        object.compereTo(500,800,350);
-        object.compereTo(500,400,900);
 
-        object.compereTo((float)500.89,(float)400.50,(float)350.52);
-        object.compereTo((float)500.50,(float)800.25,(float)350.25);
-        object.compereTo((float)500.25,(float)400.26,(float)900.89);
+        test((int)500,(int)400,(int)350);
+        test((int)500,(int)800,(int)350);
+        test((int)500,(int)400,(int)900);
 
-        /*object.compereTo("Apple","Peach","Banana");
-        object.compereTo("Peach","Apple","Banana");
-        object.compereTo("Peach","Banana","Apple");*/
+        test((float)500.89,(float)400.50,(float)350.52);
+        test((float)500.50,(float)800.25,(float)350.25);
+        test((float)500.25,(float)400.26,(float)900.89);
+
+        test("Apple","Peach","Banana");
+        test("Peach","Apple","Banana");
+        test("Banana","Peach","Apple");
 
 
     }
-    public void compereTo(Integer object1, Integer object2, Integer object3)
-    {
-        if(object1>object2 && object1 > object3)
-            System.out.println("The "+object1+" is maximum number among three numbers.");
-        else if(object2>object1 && object2 > object3)
-            System.out.println("The "+object2+" is maximum number among three numbers.");
-        else
-            System.out.println("The "+object3+" is maximum number among three numbers.");
-    }
 
-    public void compereTo(Float object1, Float object2, Float object3)
-    {
-        if(object1>object2 && object1 > object3)
-            System.out.println("The "+object1+" is maximum number among three numbers.");
-        else if(object2>object1 && object2 > object3)
-            System.out.println("The "+object2+" is maximum number among three numbers.");
-        else
-            System.out.println("The "+object3+" is maximum number among three numbers.");
-    }
+        public static <T extends Comparable> void  test(T object1, T object2, T object3)
+            {
+                T maximum = object1;
 
-/*    public void compereTo(String object1, String object2, String object3)
-    {
-        if(object1 > object2 && object1 > object3)
-            System.out.println("The "+object1+" is maximum number among three numbers.");
-        else if(object2 > object1 && object2 > object3)
-            System.out.println("The "+object2+" is maximum number among three numbers.");
-        else
-            System.out.println("The "+object3+" is maximum number among three numbers.");
-    }*/
-}
+                if(object2.compareTo(maximum)>0)
+                    maximum=object2;
+                else if(object3.compareTo(maximum)>0)
+                    maximum=object3;
+              System.out.println("The largest value from "+object1+" , "+object2+" and "+object3+" is "+maximum);
+            }
+    }
